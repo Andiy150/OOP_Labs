@@ -2,8 +2,8 @@ package Lab05;
 
 public class Lab05 {
     // Task 1
-    public double calculateTrapezoidArea(double base1, double base2, double height) {
-        return (base1 + base2) * height / 2.0;
+    public double calculateParallelogramArea(double base, double height) {
+        return base * height;
     }
 
     // Task 2

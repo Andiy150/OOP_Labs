@@ -56,20 +56,22 @@ public class Lab03 {
         double end = 2.0;
         double step = 0.1;
 
-        // Using for loop
-        System.out.println("Using for loop:");
+        System.out.println("Tabulating function with for loop:");
         for (double x = start; x <= end; x += step) {
-            double y = Math.sqrt(x) / (x + 1);
-            System.out.printf("f(%.1f) = %.2f%n", x, y);
+            double y = calculateFunction(x);
+            System.out.printf("f(%.1f) = %.4f%n", x, y);
         }
 
-        // Using while loop
-        System.out.println("\nUsing while loop:");
+        System.out.println("Tabulating function with while loop:");
         double x = start;
         while (x <= end) {
-            double y = Math.sqrt(x) / (x + 1);
-            System.out.printf("f(%.1f) = %.2f%n", x, y);
+            double y = calculateFunction(x);
+            System.out.printf("f(%.1f) = %.4f%n", x, y);
             x += step;
         }
+    }
+    // The function to calculate
+    private double calculateFunction(double x) {
+        return x - 2 + Math.sin(1 / x);
     }
 }

@@ -25,8 +25,9 @@ public class Main {
         lab.solveQuadraticEquation(1, -5, 6); // Task 1
         lab.determineQuadrant(1, -1); // Task 2
         lab.isTwoDigitAndEven(22); // Task 3
-        lab.evaluateFunction(4); // Task 4
-        lab.determineDayType(6); // Task 5
+        double result = lab.evaluateFunction(4.3); // Task 4
+        System.out.println("f(" + 4.3 + ") = " + result);
+        lab.printDaysInMonth(6); // Task 5
 
         System.out.println("\n\n");
 
@@ -66,19 +67,19 @@ public class Main {
 
         Lab05 lab05 = new Lab05();
 
-        // Task 1: Calculate the area of a trapezoid
-        double area = lab05.calculateTrapezoidArea(5, 7, 3);
+        // Task 1
+        double area = lab05.calculateParallelogramArea(5, 7);
         System.out.println("Area of trapezoid: " + area);
 
-        // Task 2: Find and return the smallest of three numbers
+        // Task 2
         double smallest = lab05.findSmallestNumber(3, 7, 1);
         System.out.println("The smallest number is: " + smallest);
 
-        // Task 3: Print an array
+        // Task 3
         System.out.print("The array is: ");
         lab05.printArray(oddNumbers);
 
-        // Task 4: Return the largest number from an array
+        // Task 4
         int largest = lab05.findLargestNumber(oddNumbers);
         System.out.println("The largest number in the array is: " + largest);
 

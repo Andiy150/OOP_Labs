@@ -47,26 +47,34 @@ public class Lab02 {
         }
     }
     // Task 4
-    public void evaluateFunction(int x) {
-        if (x < 0) {
-            System.out.println(Math.pow(x, 2) + 3);
-        } else if (x <= 5) {
-            System.out.println(6 * Math.sqrt(x));
-        } else { // x > 5
-            System.out.println(-x + 9);
+    public double evaluateFunction(double x) {
+        if (x <= -0.7) {
+            return Math.pow(Math.sin(x), 2) - Math.pow(Math.cos(1 + Math.pow(x, 2)), 1/3.0);
+        } else if (x > -0.7 && x <= 1.7) {
+            return logBase3(Math.abs(Math.cos(Math.pow(x, 2) + 1)));
+        } else { // x > 1.7
+            return Math.pow(Math.E, 3 + x);
         }
     }
+
+    private double logBase3(double value) {
+        return Math.log(value) / Math.log(3);
+    }
     // Task 5
-    public void determineDayType(int day) {
-        switch (day) {
-            case 1: case 2: case 3: case 4: case 5:
-                System.out.println("It's a weekday.");
+    public void printDaysInMonth(int monthNumber) {
+        switch (monthNumber) {
+            case 1: case 3: case 5: case 7: case 8: case 10: case 12:
+                System.out.println("31 days");
                 break;
-            case 6: case 7:
-                System.out.println("It's a weekend.");
+            case 4: case 6: case 9: case 11:
+                System.out.println("30 days");
+                break;
+            case 2:
+                System.out.println("28 or 29 days (29 in a leap year)");
                 break;
             default:
-                System.out.println("Invalid day number. Please enter a number between 1 and 7.");
+                System.out.println("Invalid month number. Please enter a number between 1 and 12.");
+                break;
         }
     }
 }
