@@ -13,6 +13,6 @@ public class Car {
         this.year = year;
         this.type = type;
         this.gears = gears;
-        this.doors = 4; // standard number of doors
+        this.doors = 4;
     }
 }

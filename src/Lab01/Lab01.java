@@ -10,7 +10,7 @@ public class Lab01 {
         double quotient = 1.0;
 
         for (int i = 0; i < numbers.length; i++) {
-            numbers[i] = random.nextInt(100) + 1; // Generate random numbers from 1 to 100
+            numbers[i] = random.nextInt(100) + 1;
             sum += numbers[i];
             if (i == 0) {
                 difference = numbers[i];

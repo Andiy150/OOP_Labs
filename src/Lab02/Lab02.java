@@ -1,7 +1,7 @@
 package Lab02;
 
 public class Lab02 {
-    // Task 1: Solution of a quadratic equation
+    // Task 1
     public void solveQuadraticEquation(double a, double b, double c) {
         double discriminant = b * b - 4 * a * c;
         double root1, root2;
@@ -20,7 +20,7 @@ public class Lab02 {
         }
     }
 
-    // Task 2: Determine the quadrant of a point
+    // Task 2
     public void determineQuadrant(double x, double y) {
         if (x > 0 && y > 0) {
             System.out.println("Point (" + x + ", " + y + ") is in the first quadrant.");
@@ -35,7 +35,7 @@ public class Lab02 {
         }
     }
 
-    // Task 3: Determine if a number is two-digit and even
+    // Task 3
     public void isTwoDigitAndEven(int number) {
         boolean isTwoDigit = number >= 10 && number <= 99 || number <= -10 && number >= -99;
         boolean isEven = number % 2 == 0;
@@ -56,7 +56,7 @@ public class Lab02 {
             System.out.println(-x + 9);
         }
     }
-    // Task 5: Determine if it's a weekday or weekend based on the day number
+    // Task 5
     public void determineDayType(int day) {
         switch (day) {
             case 1: case 2: case 3: case 4: case 5:
