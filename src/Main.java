@@ -1,5 +1,6 @@
 import Lab01.*;
 import Lab02.*;
+import Lab03.*;
 
 public class Main {
     public static void main(String[] args) {
@@ -25,5 +26,15 @@ public class Main {
 
         System.out.println("\n\n");
 
+        Lab03 lab03 = new Lab03();
+        String phrase = "This is a phrase to be printed 50 times.";
+
+        lab03.printPhrase(phrase);// Task 1
+        lab03.printTimeFor();// Task 2
+        lab03.printTimeWhile();// Task 3
+        lab03.printTimeWithSeconds();// Task 4
+        lab03.tabulateFunction();// Task 5
+
+        System.out.println("\n\n");
     }
 }
