@@ -2,6 +2,7 @@ import Lab01.*;
 import Lab02.*;
 import Lab03.*;
 import Lab04.*;
+import Lab05.*;
 
 import java.util.Arrays;
 
@@ -42,24 +43,44 @@ public class Main {
 
         Lab04 lab04 = new Lab04();
 
-        // Task 1: Arrays with even and odd numbers
+        // Task 1
         int[] evenNumbers = lab04.fillArrayWithEvenNumbers();
         int[] oddNumbers = lab04.fillArrayWithOddNumbers();
         System.out.println("Even numbers: " + Arrays.toString(evenNumbers));
         System.out.println("Odd numbers: " + Arrays.toString(oddNumbers));
 
-        // Task 2: Array operations
+        // Task 2
         lab04.arrayOperations();
 
-        // Task 3: Sum of elements in an array
+        // Task 3
         double[] realNumbers = {1.5, 2.3, -1.7, 4.1, 5.6};
         double sum = lab04.sumArrayElements(realNumbers);
         System.out.println("Sum of elements: " + sum);
 
-        // Task 4: Change sign of odd elements
+        // Task 4
         int[] mixedNumbers = {1, 2, 3, 4, -5, -6, 7, 8, 9, -10};
         int[] modifiedNumbers = lab04.changeSignOfOdds(mixedNumbers);
         System.out.println("Modified numbers: " + Arrays.toString(modifiedNumbers));
+
+        System.out.println("\n\n");
+
+        Lab05 lab05 = new Lab05();
+
+        // Task 1: Calculate the area of a trapezoid
+        double area = lab05.calculateTrapezoidArea(5, 7, 3);
+        System.out.println("Area of trapezoid: " + area);
+
+        // Task 2: Find and return the smallest of three numbers
+        double smallest = lab05.findSmallestNumber(3, 7, 1);
+        System.out.println("The smallest number is: " + smallest);
+
+        // Task 3: Print an array
+        System.out.print("The array is: ");
+        lab05.printArray(oddNumbers);
+
+        // Task 4: Return the largest number from an array
+        int largest = lab05.findLargestNumber(oddNumbers);
+        System.out.println("The largest number in the array is: " + largest);
 
     }
 }
