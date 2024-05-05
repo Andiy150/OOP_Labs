@@ -4,6 +4,7 @@ import Lab03.*;
 import Lab04.*;
 import Lab05.*;
 import Lab06.*;
+import Lab07.*;
 
 import java.util.Arrays;
 import java.util.Scanner;
@@ -113,7 +114,9 @@ public class Main {
                         lab06.Task5();
                         break;
                     case 7:
-                        System.out.println("You entered three.");
+                        Lab07 lab07 = new Lab07();
+                        lab07.Task1();
+                        lab07.Task2();
                         break;
                     case 8:
                         System.out.println("You entered three.");
