@@ -6,6 +6,7 @@ import Lab05.*;
 import Lab06.*;
 import Lab07.*;
 import Lab08.Lab08;
+import Lab09.Lab09;
 
 import java.util.Arrays;
 import java.util.Scanner;
@@ -15,10 +16,10 @@ public class Main {
 
         while (true) {
             Scanner scanner = new Scanner(System.in);
-            if (scanner.hasNextLine()) {
-                System.out.println("Виберіть лабораторну роботу (або напишіть 'exit' щоб вийти):");
-                String input = scanner.nextLine();
+            System.out.println("Виберіть лабораторну роботу (або напишіть 'exit' щоб вийти):");
 
+            if (scanner.hasNextLine()) {
+                String input = scanner.nextLine();
                 if (input.equalsIgnoreCase("exit")) {
                     break;
                 }
@@ -125,7 +126,8 @@ public class Main {
                             lab08.Task1();
                             break;
                         case 9:
-
+                            Lab09 lab09 = new Lab09();
+                            lab09.Task1();
                             break;
                         default:
                             System.out.println("You entered a number other than 1, 2, or 3.");
